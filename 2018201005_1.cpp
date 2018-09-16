@@ -198,10 +198,13 @@ public:
             ans=erase(ans);
             if(s==0)
                 ans="-"+ans;
+            return ans;
         }
         ans=erase(ans);
         if(ans.length()==0)
             ans='0';
+        else if(s==1)
+            ans="-"+ans;
         return ans;
     }
     string complement(string comp)
